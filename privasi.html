@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<title>Kebijakan Privasi Finora</title>
+<style>
+:root{--bg:#EDF1F5;--card:#fff;--ink:#111B26;--muted:#5E6B78;--primary:#1A63D8;--line:#E1E7EE}
+@media (prefers-color-scheme:dark){:root{--bg:#0C1218;--card:#141C25;--ink:#E7EDF3;--muted:#8C99A6;--primary:#7DB6FF;--line:#223040}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+header a.brand{color:var(--ink);font-weight:800;font-size:22px;text-decoration:none}
+nav{margin:12px 0 24px;display:flex;gap:12px;flex-wrap:wrap}
+nav a{color:var(--primary);font-weight:600}
+section{background:var(--card);border-radius:20px;padding:20px 20px 8px;margin-bottom:16px}
+h1{font-size:28px;margin:8px 0}
+h2{font-size:19px;margin:20px 0 8px}
+p,li{color:var(--ink)}
+.muted{color:var(--muted);font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:8px 0 16px}
+td,th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+code{background:var(--bg);padding:1px 6px;border-radius:6px;font-size:.92em}
+</style>
+</head>
+<body>
+<main>
+<header><a class="brand" href="index.html"><img src="logo.svg" alt="" width="26" height="30" style="vertical-align:middle"> Finora</a></header>
+<nav><a href="#id">Bahasa Indonesia</a><a href="#en">English</a><a href="index.html">Beranda / Home</a></nav>
+
+<section id="id" lang="id">
+<h1>Kebijakan Privasi Finora</h1>
+<p class="muted">Berlaku sejak 26 Oktober 2026 (versi 2026-10-26). Dokumen ini berisi draf yang belum ditinjau ahli hukum.</p>
+
+<h2>1. Siapa kami</h2>
+<p>Finora adalah aplikasi pencatat keuangan pribadi untuk Android. Pengelola dan Pengendali Data Pribadi adalah pengembang Finora (Yehuda Hero Setiawan, perorangan). Kontak: <a href="mailto:yahudahero168@gmail.com">yahudahero168@gmail.com</a>.</p>
+
+<h2>2. Data apa yang kami proses</h2>
+<table>
+<tr><th>Data</th><th>Disimpan di mana</th><th>Untuk apa</th></tr>
+<tr><td>Catatan keuangan: nominal, keterangan, kategori, budget</td><td>Google Sheets/Drive milik kamu, dan cache di HP-mu</td><td>Menjalankan fitur pencatatan. <strong>Tidak pernah dikirim ke server Finora.</strong></td></tr>
+<tr><td>Email dan nama akun Google</td><td>Firebase Firestore (Google Cloud, lokasi Jakarta), satu dokumen profil per pengguna</td><td>Mengenali akun, dukungan pengguna, menghitung jumlah pengguna</td></tr>
+<tr><td>Hitungan pemakaian: jumlah catatan, buku, budget, bahasa, versi aplikasi, waktu terakhir aktif</td><td>Profil Firebase tadi</td><td>Memahami penggunaan dan memperbaiki aplikasi. Tidak berisi nominal atau keterangan catatan.</td></tr>
+<tr><td>Catatan persetujuan: versi kebijakan dan tanggal kamu menyetujuinya</td><td>HP-mu dan profil Firebase</td><td>Bukti persetujuan</td></tr>
+<tr><td>Statistik pemakaian anonim (klik fitur) dan pengenal perangkat</td><td>Firebase Analytics</td><td>Statistik fitur. Bisa dimatikan di Pengaturan &gt; Privasi.</td></tr>
+</table>
+<p>Kami <strong>tidak</strong> mengumpulkan lokasi, kontak, foto, atau isi Drive-mu selain spreadsheet yang dibuat Finora sendiri.</p>
+
+<h2>3. Izin Google yang diminta</h2>
+<p>Finora memakai masuk dengan Google (email dan profil dasar) dan satu izin Drive: <code>drive.file</code>. Izin ini hanya membuat Finora dapat membuat dan membuka file yang dibuat oleh Finora sendiri (spreadsheet &ldquo;Finora - nama buku&rdquo;). Finora tidak dapat melihat file Drive-mu yang lain.</p>
+
+<h2>4. Pernyataan Limited Use Google</h2>
+<p>Penggunaan dan pemindahan informasi yang diterima Finora dari Google API akan mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Kebijakan Data Pengguna Layanan Google API</a>, termasuk persyaratan Limited Use. Data dari Google hanya dipakai untuk menyediakan fitur yang terlihat di aplikasi, tidak dijual, tidak dipakai untuk iklan, dan tidak dibaca manusia kecuali atas izinmu, untuk keamanan, atau bila diwajibkan hukum.</p>
+
+<h2>5. Dasar pemrosesan</h2>
+<p>Persetujuanmu saat masuk (dicatat tanggal dan versinya), serta pelaksanaan layanan yang kamu minta (mencatat keuanganmu). Kamu dapat menarik persetujuan kapan saja dengan menghapus akun (bagian 8).</p>
+
+<h2>6. Pihak ketiga dan transfer ke luar negeri</h2>
+<p>Kami memakai Google (masuk dengan Google, Sheets dan Drive API, Firebase Authentication, Firestore, Analytics). Server Google dapat berada di luar Indonesia. Kami memilih lokasi database Firestore di Jakarta (asia-southeast2), tetapi layanan Google lain dapat memproses data di negara lain dengan perlindungan sebagaimana kebijakan Google. Kami tidak menjual data kepada siapa pun.</p>
+
+<h2>7. Berapa lama disimpan</h2>
+<p>Profil Firebase disimpan selama akunmu aktif dan dihapus saat kamu meminta penghapusan. Data Analytics mengikuti pengaturan masa simpan Firebase. Catatan keuangan ada di Drive-mu dan tetap ada sampai kamu menghapusnya sendiri.</p>
+
+<h2>8. Hak kamu dan cara memakainya</h2>
+<ul>
+<li><strong>Akses dan salinan:</strong> catatan uangmu sudah ada di spreadsheet Drive-mu. Untuk salinan profil, kirim email.</li>
+<li><strong>Perbaikan:</strong> ubah catatanmu langsung di aplikasi; untuk profil, kirim email.</li>
+<li><strong>Mematikan analitik:</strong> Pengaturan &gt; Privasi.</li>
+<li><strong>Penghapusan data:</strong> kirim email ke <a href="mailto:yahudahero168@gmail.com">yahudahero168@gmail.com</a> dari alamat akun Google yang kamu pakai dengan subjek &ldquo;Hapus akun&rdquo;. Kami menghapus profil Firebase dalam 30 hari. Spreadsheet di Drive-mu tidak ikut terhapus; hapus sendiri dari Google Drive bila perlu. Kamu juga bisa mencabut akses Finora di <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+
+<h2>9. Keamanan dan insiden</h2>
+<p>Aturan Firestore membatasi setiap pengguna hanya pada profilnya sendiri dan hanya pada kolom hitungan yang disebut di atas. Bila terjadi kebocoran data pribadi, kami memberi tahu pengguna dan pihak berwenang dalam 3 x 24 jam sesuai UU PDP.</p>
+
+<h2>10. Anak-anak</h2>
+<p>Finora ditujukan untuk pengguna berusia 17 tahun ke atas.</p>
+
+<h2>11. Perubahan kebijakan</h2>
+<p>Bila isi berubah, kami menaikkan versi dan meminta persetujuan baru di aplikasi. Tanggal berlaku ada di atas halaman ini.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Finora Privacy Policy</h1>
+<p class="muted">Effective 26 October 2026 (version 2026-10-26). This is a draft that has not been reviewed by a lawyer.</p>
+
+<h2>1. Who we are</h2>
+<p>Finora is a personal finance tracking app for Android. The controller of personal data is the Finora developer (Yehuda Hero Setiawan, an individual). Contact: <a href="mailto:yahudahero168@gmail.com">yahudahero168@gmail.com</a>.</p>
+
+<h2>2. What data we process</h2>
+<table>
+<tr><th>Data</th><th>Where it is stored</th><th>Why</th></tr>
+<tr><td>Financial entries: amounts, notes, categories, budgets</td><td>Your own Google Sheets/Drive, and a cache on your phone</td><td>To run the tracking features. <strong>Never sent to Finora servers.</strong></td></tr>
+<tr><td>Google account email and name</td><td>Firebase Firestore (Google Cloud, Jakarta location), one profile document per user</td><td>To recognise your account, support, and count users</td></tr>
+<tr><td>Usage counts: number of entries, books, budgets, language, app version, last active time</td><td>The same Firebase profile</td><td>To understand usage and improve the app. Contains no amounts or notes.</td></tr>
+<tr><td>Consent record: policy version and the date you agreed</td><td>Your phone and the Firebase profile</td><td>Proof of consent</td></tr>
+<tr><td>Anonymous usage statistics (feature taps) and a device identifier</td><td>Firebase Analytics</td><td>Feature statistics. Can be turned off in Settings &gt; Privacy.</td></tr>
+</table>
+<p>We do <strong>not</strong> collect your location, contacts, photos, or Drive contents other than the spreadsheets Finora itself creates.</p>
+
+<h2>3. Google permissions requested</h2>
+<p>Finora uses Google Sign-In (email and basic profile) and one Drive permission: <code>drive.file</code>. It lets Finora create and open only the files Finora itself created (the &ldquo;Finora - book name&rdquo; spreadsheets). Finora cannot see your other Drive files.</p>
+
+<h2>4. Google Limited Use statement</h2>
+<p>Finora's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the features visible in the app, is not sold, is not used for advertising, and is not read by humans except with your consent, for security, or where required by law.</p>
+
+<h2>5. Legal basis</h2>
+<p>Your consent when signing in (recorded with date and version), and performing the service you asked for (tracking your finances). You can withdraw consent at any time by deleting your account (section 8).</p>
+
+<h2>6. Third parties and international transfer</h2>
+<p>We use Google (Sign-In, Sheets and Drive APIs, Firebase Authentication, Firestore, Analytics). Google servers may be outside Indonesia. We chose the Firestore database location in Jakarta (asia-southeast2), but other Google services may process data in other countries under Google's own safeguards. We do not sell data to anyone.</p>
+
+<h2>7. How long we keep it</h2>
+<p>The Firebase profile is kept while your account is active and deleted when you request deletion. Analytics data follows the Firebase retention setting. Your financial entries live in your Drive until you delete them yourself.</p>
+
+<h2>8. Your rights and how to use them</h2>
+<ul>
+<li><strong>Access and copy:</strong> your money entries are already in your Drive spreadsheet. For a copy of your profile, email us.</li>
+<li><strong>Correction:</strong> edit your entries in the app; for the profile, email us.</li>
+<li><strong>Turn off analytics:</strong> Settings &gt; Privacy.</li>
+<li><strong>Deletion:</strong> email <a href="mailto:yahudahero168@gmail.com">yahudahero168@gmail.com</a> from the Google account address you use, subject &ldquo;Delete account&rdquo;. We delete the Firebase profile within 30 days. The spreadsheets in your Drive are not deleted; delete them yourself in Google Drive if you wish. You can also revoke Finora's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+
+<h2>9. Security and incidents</h2>
+<p>Firestore rules restrict each user to their own profile and only the count fields listed above. If a personal data breach happens, we notify users and the authorities within 3 x 24 hours as required by Indonesia's PDP Law.</p>
+
+<h2>10. Children</h2>
+<p>Finora is intended for users aged 17 and over.</p>
+
+<h2>11. Changes</h2>
+<p>If the content changes we raise the version and ask for new consent in the app. The effective date is at the top of this page.</p>
+</section>
+</main>
+</body>
+</html>
